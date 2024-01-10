@@ -1,0 +1,32 @@
+button > span {
+    @apply transition-all duration-200
+}
+
+.nav-button-active > span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.nav-button-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.nav-button-active > span:nth-child(3) {
+    @apply -rotate-45;
+}
+
+@media (min-width: 1024px) {
+    nav > a::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        background-color: #1e293b;
+        display: block;
+        transition: 0.2s;
+        margin: auto;
+        margin-top: -5px;
+    }
+
+    nav > a:hover::after {
+        width: 100%;
+    }
+}
