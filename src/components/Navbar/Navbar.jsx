@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import myLogo from '/logo.svg'
 import './Navbar.css'
 
 const navMenu = [
@@ -44,7 +45,7 @@ function Navbar() {
                 <div className="container flex items-center justify-between py-4 px-7 box-border relative inset-x-0 min-w-full">
                     <div>
                         <a href="#">
-                            <img src="../../../image/logo.svg" alt="" className='w-8 h-8 lg:w-10 lg:h-10' />
+                            <img src={myLogo} alt="" className='w-8 h-8 lg:w-10 lg:h-10' />
                         </a>
                     </div>
                     <div className='flex'>
