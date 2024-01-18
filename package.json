@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Cangcorangsz.github.io/My-Portfolio/",
+  "homepage": "https://dimasbajuri.github.io/My-Portfolio/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
