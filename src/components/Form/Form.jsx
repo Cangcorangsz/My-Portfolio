@@ -21,7 +21,7 @@ function Form() {
                             <input type="email" id='email' className='bg-gray-300 rounded-md w-full p-1' />
                         </div>
                         <div className='my-2 lg:my-7'>
-                            <label htmlFor="name">Pesan:</label>
+                            <label htmlFor="name">Message:</label>
                             <br />
                             <textarea type="email" id='name' className='bg-gray-300 rounded-md w-full p-1' />
                         </div>

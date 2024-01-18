@@ -3,11 +3,11 @@ import myLogo from '/logo.svg'
 import './Navbar.css'
 
 const navMenu = [
-    { name: "Home", href: "#" },
-    { name: "About", href: "#about" },
-    { name: "Porfolio", href: "#portfolio" },
-    { name: "Blog", href: "#blog" },
-    { name: "Contact", href: "#contact" },
+    { id: "1", name: "Home", href: "#" },
+    { id: "2", name: "About", href: "#about" },
+    { id: "3", name: "Porfolio", href: "#portfolio" },
+    { id: "4", name: "Blog", href: "#blog" },
+    { id: "5", name: "Contact", href: "#contact" },
 ];
 
 function Navbar() {
@@ -55,10 +55,10 @@ function Navbar() {
                             <span className='w-6 h-1 bg-dark rounded-md origin-bottom-left'></span>
                         </button>
                         <nav className={`${navButtonActive ? ` flex` : ` hidden`} bg-bright absolute top-full flex-col right-5 text-right gap-y-2 p-5 rounded-md shadow-lg lg:flex lg:flex-row lg:top-0 lg:shadow-none lg:bg-transparent`}>
-                            {navMenu.map((item, index) => {
+                            {navMenu.map((item) => {
                                 return (
                                     <>
-                                        <a key={index} href={item.href} className={`hover:bg-dark hover:text-slate-100 text-primabg-dark pl-7 py-1 pr-2 rounded-md transition duration-150 lg:hover:bg-transparent lg:hover:hover:text-slate-800`}>
+                                        <a key={item.id} href={item.href} className={`hover:bg-dark hover:text-slate-100 text-primabg-dark pl-7 py-1 pr-2 rounded-md transition duration-150 lg:hover:bg-transparent lg:hover:hover:text-slate-800`}>
                                             {item.name}
                                         </a>
                                     </>

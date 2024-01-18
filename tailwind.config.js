@@ -11,6 +11,9 @@ export default {
         secondary: '#6366f1',
         dark: '#0f172a',
         bright: '#eef2ff',
+      },
+      backgroundImage: {
+        blob: 'url("/blob.svg")',
       }
     },
   },

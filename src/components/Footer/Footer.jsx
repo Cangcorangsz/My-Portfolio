@@ -29,12 +29,7 @@ function Footer() {
                         <a target='_blank' className='text-slate-700 hover:text-slate-500' href="https://www.linkedin.com/in/dimas-bajuri-019453260/">LinkedIn</a>
                         <a target='_blank' className='text-slate-700 hover:text-slate-500' href="https://www.reddit.com/user/BebekGoyangz/">Reddit</a>
                     </div>
-                    <div className='flex flex-col gap-2'>
-                        <h1 className='text-bright font-semibold'>Other Contributions</h1>
-                        <a target='_blank' className='text-slate-700 hover:text-slate-500 flex items-center gap-1' href="">
-                            <FontAwesomeIcon icon="fa-brands fa-instagram" /> <span>Iqbal</span>
-                        </a>
-                    </div>
+                    
                 </div>
             </div>
         </>

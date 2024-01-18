@@ -27,8 +27,8 @@ function Portfolio() {
                     <h1 className='text-3xl font-semibold text-center mb-2'>Newest Projects</h1>
                     <p className='text-base text-gray-700 text-center mb-5 lg:mb-10'>Explore my diverse portfolio showcasing a collection of projects where creativity meets functionality.</p>
                     <div className='w-full grid grid-cols-1 items-start gap-8 lg:grid-cols-2'>
-                        <PortfolioImage source={img1} href="https://cangcorangsz.github.io/bakery/" header="Flourish Bakery" note="Flourish Bakery is a cute website I made for a pretend bakery. It's all about showing off yummy treats and creating a cozy online space. I focused on making it easy to use and nice to look at, just like the bakery itself." />
-                        <PortfolioImage source={img2} href="https://cangcorangsz.github.io/market/" header="Gaming Market" note="Gaming Market is a cool project where I built a website for gamers. You can check out and buy the newest games and accessories. I tried to make the site super easy to use, capturing the fun and excitement of the gaming world." />
+                        <PortfolioImage source={img1} href="https://dimasbajuri.github.io/bakery/" header="Flourish Bakery" note="Flourish Bakery is a cute website I made for a pretend bakery. It's all about showing off yummy treats and creating a cozy online space. I focused on making it easy to use and nice to look at, just like the bakery itself." />
+                        <PortfolioImage source={img2} href="https://dimasbajuri.github.io/market/" header="Gaming Market" note="Gaming Market is a cool project where I built a website for gamers. You can check out and buy the newest games and accessories. I tried to make the site super easy to use, capturing the fun and excitement of the gaming world." />
                     </div>
                 </div>
             </section>
