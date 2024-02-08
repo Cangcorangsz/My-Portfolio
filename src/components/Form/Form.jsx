@@ -1,6 +1,33 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
-function Form() {
+const Form = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                'service_aop9r3k',
+                'template_e31nkfr',
+                form.current, {
+                publicKey: 'RaYSARQSYkQc2Qw0n',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    e.target.reset();
+                    form.current.reset()
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                    e.target.reset();
+                    alert('Failed to send email. Please try again later.')
+                },
+            );
+    };
+
     return (
         <>
             <section id='contact' className="py-9">
@@ -9,21 +36,21 @@ function Form() {
                     <h1 className='text-3xl font-semibold text-center mb-2'>Contact Us</h1>
                     <p className='text-base text-gray-700 text-center mb-5 lg:mb-10 w-3/4 mx-auto lg:w-full'>Whether you have questions about our services, need assistance with a project, or want to discuss a potential collaboration, our team is here to assist you.</p>
 
-                    <form action="" className='mt-3 px-6'>
+                    <form onSubmit={sendEmail} ref={form} className='mt-3 px-6'>
                         <div className='my-2 lg:my-7'>
                             <label htmlFor="name" className=''>Name:</label>
                             <br />
-                            <input type="text" id='name' className='bg-gray-300 rounded-md w-full p-1' />
+                            <input type="text" id='name' name='user_name' className='bg-gray-300 rounded-md w-full p-1' />
                         </div>
                         <div className='my-2 lg:my-7'>
                             <label htmlFor="email">Email:</label>
                             <br />
-                            <input type="email" id='email' className='bg-gray-300 rounded-md w-full p-1' />
+                            <input type="email" id='email' name='   ' className='bg-gray-300 rounded-md w-full p-1' />
                         </div>
                         <div className='my-2 lg:my-7'>
                             <label htmlFor="name">Message:</label>
                             <br />
-                            <textarea type="email" id='name' className='bg-gray-300 rounded-md w-full p-1' />
+                            <textarea id='message' name='message' className='bg-gray-300 rounded-md w-full p-1' />
                         </div>
                         <input type="submit" value="Send" className='cursor-pointer text-bright hover:ring-secondary ring-2 hover:text-primary hover:bg-bright w-full bg-secondary h-11 rounded-full my-1' />
                     </form>
@@ -31,6 +58,6 @@ function Form() {
             </section >
         </>
     )
-}
+};
 
 export default Form
