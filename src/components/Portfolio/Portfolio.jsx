@@ -29,6 +29,7 @@ function Portfolio() {
                     <div className='w-full grid grid-cols-1 items-start gap-8 lg:grid-cols-2'>
                         <PortfolioImage source={img1} href="https://dimasbajuri.github.io/bakery/" header="Flourish Bakery" note="Flourish Bakery is a cute website I made for a pretend bakery. It's all about showing off yummy treats and creating a cozy online space. I focused on making it easy to use and nice to look at, just like the bakery itself." />
                         <PortfolioImage source={img2} href="https://dimasbajuri.github.io/market/" header="Gaming Market" note="Gaming Market is a cool project where I built a website for gamers. You can check out and buy the newest games and accessories. I tried to make the site super easy to use, capturing the fun and excitement of the gaming world." />
+                        <PortfolioImage source='./portfolio-img3.png' href="https://dimasbajuri.github.io/NaturalEarth/" header="NaturalEarth" note="Natural Earth. It's a food and beverage startup that focuses on providing healthy, organic, gluten-free, and all-natural cuisine. We strive to provide our customers with delicious and nutritious alternatives to traditional cuisine, all while maintaining a commitment to sustainability and ethical practices. Our goal is to bring quality and delicious products to a broader audience and to inspire others to live a healthy and eco-conscious lifestyle." />
                     </div>
                 </div>
             </section>
