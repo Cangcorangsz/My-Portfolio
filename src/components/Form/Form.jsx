@@ -45,7 +45,7 @@ const Form = () => {
                         <div className='my-2 lg:my-7'>
                             <label htmlFor="email">Email:</label>
                             <br />
-                            <input type="email" id='email' name='   ' className='bg-gray-300 rounded-md w-full p-1' />
+                            <input type="email" id='email' name='user_email' className='bg-gray-300 rounded-md w-full p-1' />
                         </div>
                         <div className='my-2 lg:my-7'>
                             <label htmlFor="name">Message:</label>
