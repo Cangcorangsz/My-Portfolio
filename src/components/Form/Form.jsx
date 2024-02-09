@@ -40,17 +40,17 @@ const Form = () => {
                         <div className='my-2 lg:my-7'>
                             <label htmlFor="name" className=''>Name:</label>
                             <br />
-                            <input type="text" id='name' name='user_name' className='bg-gray-300 rounded-md w-full p-1' />
+                            <input type="text" id='name' name='user_name' className='bg-gray-300 rounded-md w-full p-1' required />
                         </div>
                         <div className='my-2 lg:my-7'>
                             <label htmlFor="email">Email:</label>
                             <br />
-                            <input type="email" id='email' name='user_email' className='bg-gray-300 rounded-md w-full p-1' />
+                            <input type="email" id='email' name='user_email' className='bg-gray-300 rounded-md w-full p-1' required />
                         </div>
                         <div className='my-2 lg:my-7'>
                             <label htmlFor="name">Message:</label>
                             <br />
-                            <textarea id='message' name='message' className='bg-gray-300 rounded-md w-full p-1' />
+                            <textarea id='message' name='message' className='bg-gray-300 rounded-md w-full p-1' required />
                         </div>
                         <input type="submit" value="Send" className='cursor-pointer text-bright hover:ring-secondary ring-2 hover:text-primary hover:bg-bright w-full bg-secondary h-11 rounded-full my-1' />
                     </form>
